@@ -1,11 +1,9 @@
 function skilsMember() {
-  var skills = ["HTML", "CSS", "JS", "React"];
-  var member = {
-    name: "John",
-    age: 23,
-    skills: skills,
-  };
-  console.log(member.skills);
-  console.log(member.skills[1]);
-  console.log(member.skills[3]);
+    var member = document.getElementById("member");
+    var memberValue = member.options[member.selectedIndex].value;
+    if (memberValue == "yes") {
+        document.getElementById("skils").style.display = "block";
+    } else {
+        document.getElementById("skils").style.display = "none";
+    }
 }
